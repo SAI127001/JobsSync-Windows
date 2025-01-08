@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         DOCKER_HUB_USER = 'sai127001'
-        DOCKER_HUB_REPO = 'jobssync'
+        DOCKER_HUB_REPO = 'win-jobssync'
         APP_NAME = 'jobsync'
-        S3_BUCKET = 'jobsync-artifacts'
+        S3_BUCKET = 'win-jobsync-artifacts'
         POSTGRES_USER = 'admin'
         POSTGRES_PASSWORD = 'admin'
         POSTGRES_DB = 'jobsync_db'
