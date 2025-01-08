@@ -46,9 +46,16 @@ pipeline {
         stage('Push Docker Image to Docker Hub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'docker-hub-creds', usernameVariable: 'DOCKER_HUB_USER', passwordVariable: 'DOCKER_HUB_PASSWORD')]) {
-                    bat """
-                        echo %DOCKER_HUB_PASSWORD% | docker login -u %DOCKER_HUB_USER% --password-stdin
-                    """
+                    script {
+                        // Debug: Print credentials (remove in production)
+                        echo "Docker Hub User: ${DOCKER_HUB_USER}"
+                        echo "Docker Hub Password: ${DOCKER_HUB_PASSWORD}"
+
+                        // Log in to Docker Hub
+                        bat """
+                            echo ${DOCKER_HUB_PASSWORD} | docker login -u ${DOCKER_HUB_USER} --password-stdin
+                        """
+                    }
                 }
                 bat "docker push ${env.DOCKER_HUB_USER}/${env.DOCKER_HUB_REPO}:${versionTag}"
             }
