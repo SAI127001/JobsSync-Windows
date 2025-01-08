@@ -1,0 +1,82 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.head{
+
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    position: absolute;
+    border-bottom: 2px solid;
+    box-shadow: 15px 15px 25px white;
+    list-style: none;
+}
+.logo{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    font-size: 35px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+}
+
+.head-list{
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    list-style: none;
+}
+.head-list ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style: none;
+
+}
+.head-list>.ul-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    margin-top:17px;
+    text-decoration-line: none;
+    list-style: none;
+}
+.main-body{
+    height: 90vh;
+    width: 100vw;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-body h1{
+    margin-top: -200px;
+    font-weight: 800;
+    font-size: 75px;
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+}
+
+/* ----- Job.html css*/

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1e344b;
+            color: white;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+        #logtext{
+            width:150px;
+            height:60px;
+            margin-right: 1100px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            padding: 10px 15px;
+            border: none;
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-btn:hover {
+            background-color: #003e7d;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            /* background-image: url(/BGIMAGE.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+        }
+
+        .form-container {
+            margin-top: 350px;
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #007BFF;
+            font-size: 1.8rem;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .sbtn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .sbtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./images/logoImage.jpg" alt="Logo" class="logo">
+        <img src="./images/logoText-removebg-preview.png" class="logo" id="logtext">
+        <div class="nav-buttons">
+            <button class="nav-btn" href="register-user.html">Sign Up</button>
+            <button class="nav-btn" href="login.html">Login</button>
+        </div>
+    </nav>
+
+    <div class="container">
+    <div class="form-container">
+        <form action="a_Registration" class="myForm" method="post">
+            <h2>Post Job</h2>
+            <label for="id">Id:</label>
+            <input type="text" name="id" id="id" placeholder="Enter Id">
+
+            <label for="cname">Company Name:</label>
+            <input type="text" name="cname" id="cname" placeholder="Enter company name">
+
+            <label for="jr">Job Role:</label>
+            <input type="text" name="jr" id="jr" placeholder="Enter job role">
+
+            <label for="jd">Job Description:</label>
+            <textarea name="jd" id="jd" cols="30" rows="5" placeholder="Enter job description"></textarea>
+
+            <label for="package">Package:</label>
+            <input type="text" name="package" id="package" placeholder="Package">
+
+            <label for="bond">Bond:</label>
+            <input type="tel" name="bond" id="bond" placeholder="Bond">
+
+            <label for="exp">Required Experience:</label>
+            <input type="text" name="exp" id="exp" placeholder="Required experience">
+
+            <label for="vac">Vacancy:</label>
+            <input type="text" name="vac" id="vac" placeholder="Vacancy">
+
+            <label for="ld">Last Date:</label>
+            <input type="date" name="ld" id="ld">
+
+            <button type="submit" class="sbtn">Post Job</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
